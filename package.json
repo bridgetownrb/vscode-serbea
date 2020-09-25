@@ -1,0 +1,26 @@
+{
+    "name": "serbea",
+    "displayName": "Serbea",
+    "publisher": "bridgetown",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "serbea",
+            "aliases": ["Serbea (Ruby)", "serbea"],
+            "extensions": [".serb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "serbea",
+            "scopeName": "text.html.serb",
+            "path": "./syntaxes/serbea.tmLanguage.json"
+        }]
+    }
+}

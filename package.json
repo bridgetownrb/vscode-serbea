@@ -3,7 +3,7 @@
     "displayName": "Serbea",
     "publisher": "bridgetown",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.3.0",
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -16,11 +16,22 @@
             "aliases": ["Serbea (Ruby)", "serbea"],
             "extensions": [".serb"],
             "configuration": "./language-configuration.json"
+        },
+        {
+            "id": "serbea-markdown",
+            "aliases": ["Serbea Markdown (Ruby)"],
+            "extensions": [".md"],
+            "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "serbea",
             "scopeName": "text.html.serb",
             "path": "./syntaxes/serbea.tmLanguage.json"
+        },
+        {
+            "language": "serbea-markdown",
+            "scopeName": "text.html.markdown.serb",
+            "path": "./syntaxes/serbea-markdown.tmLanguage.json"
         }]
     }
 }

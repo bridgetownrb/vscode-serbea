@@ -2,14 +2,14 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"patterns": [
 		{
-			"include": "text.html.basic"
+			"include": "text.html.markdown"
 		},
 		{
       "include": "#frontmatter"
     }
 	],
 	"injections": {
-		"text.html.serb - (meta.embedded.block.serb | meta.embedded.line.serb | meta.tag | comment), L:meta.tag, L:source.js.embedded.html": {
+		"text.html.markdown.serb - (meta.embedded.block.serb | meta.embedded.line.serb | meta.tag | comment), L:meta.tag, L:source.js.embedded.html": {
 			"patterns": [
 				{
 					"begin": "(^\\s*)(?={[%{](?![^%]*[%}]}))",
@@ -129,5 +129,5 @@
 			]
 		}
 	},
-	"scopeName": "text.html.serb"
+	"scopeName": "text.html.markdown.serb"
 }

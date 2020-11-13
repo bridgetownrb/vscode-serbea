@@ -1,11 +1,7 @@
 const vscode = require('vscode');
 
 function activate(context) {
-	console.log('Congratulations, w00t!');
-
-	let disposable = vscode.commands.registerCommand('serbeaExtension.convertErbToSerbea', () => {
-		// Get the active text editor
-		console.log("running the extension!")
+	const erbToSerbea = vscode.commands.registerCommand('serbeaExtension.convertErbToSerbea', () => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (editor) {
@@ -13,16 +9,30 @@ function activate(context) {
 			const selection = editor.selection;
 
 			const erbSource = document.getText(selection);
-			console.log("Here's the ERB", erbSource)
 			const serbeaSource = erbSource.replace(/<%/g, "{%").replace(/%>/g, "%}");
-			console.log("Here's the source", serbeaSource)
 			editor.edit(editBuilder => {
 				editBuilder.replace(selection, serbeaSource);
 			});
 		}
 	});
 
-	context.subscriptions.push(disposable);
+	const expressionToPipeline = vscode.commands.registerCommand('serbeaExtension.convertExpressionToPipeline', () => {
+		const editor = vscode.window.activeTextEditor;
+
+		if (editor) {
+			const document = editor.document;
+			const selection = editor.selection;
+
+			const serbeaSource = document.getText(selection);
+			const convertedSource = serbeaSource.replace(/{%=/g, "{{").replace(/%}/g, "}}");
+			editor.edit(editBuilder => {
+				editBuilder.replace(selection, convertedSource);
+			});
+		}
+	});
+
+	context.subscriptions.push(erbToSerbea);
+	context.subscriptions.push(expressionToPipeline);
 }
 
 // this method is called when your extension is deactivated

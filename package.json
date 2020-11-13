@@ -3,7 +3,7 @@
     "displayName": "Serbea",
     "publisher": "bridgetown",
     "description": "",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -12,7 +12,8 @@
     ],
     "main": "./src/extension.js",
     "activationEvents": [
-        "onCommand:serbeaExtension.convertErbToSerbea"
+        "onCommand:serbeaExtension.convertErbToSerbea",
+        "onCommand:serbeaExtension.convertExpressionToPipeline"
     ],
     "contributes": {
         "languages": [{
@@ -41,6 +42,10 @@
             {
                 "command": "serbeaExtension.convertErbToSerbea",
                 "title": "Convert Selection from ERB to Serbea"
+            },
+            {
+                "command": "serbeaExtension.convertExpressionToPipeline",
+                "title": "Convert Selection from Serbea expression to pipeline"
             }
         ]
     }

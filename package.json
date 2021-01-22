@@ -3,7 +3,8 @@
     "displayName": "Serbea",
     "publisher": "whitefusion",
     "description": "Syntax highlighting for Serbea templates",
-    "version": "0.5.1",
+    "icon": "icon.png",
+    "version": "0.5.2",
     "repository": {
 		"type": "git",
 		"url": "https://github.com/bridgetownrb/vscode-serbea"
@@ -57,6 +58,7 @@
         ]
     },
     "script": {
-        "build": "vsce package"
+        "build": "vsce package",
+        "publish": "vsce publish"
     }
 }

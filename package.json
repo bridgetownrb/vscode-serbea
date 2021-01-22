@@ -55,5 +55,8 @@
                 "title": "Convert Selection from Serbea expression to pipeline"
             }
         ]
+    },
+    "script": {
+        "build": "vsce package"
     }
 }

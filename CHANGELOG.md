@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "serbea" extension will be documented in this file.
+## 0.5.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+* Initial release of the VSCode extension for Serbea templates.

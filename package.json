@@ -1,9 +1,16 @@
 {
     "name": "serbea",
     "displayName": "Serbea",
-    "publisher": "bridgetown",
-    "description": "",
-    "version": "0.5.0",
+    "publisher": "whitefusion",
+    "description": "Syntax highlighting for Serbea templates",
+    "version": "0.5.1",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/bridgetownrb/vscode-serbea"
+	},
+	"bugs": {
+		"url": "https://github.com/bridgetownrb/vscode-serbea/issues"
+	},
     "engines": {
         "vscode": "^1.49.0"
     },

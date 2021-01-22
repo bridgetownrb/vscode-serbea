@@ -1,6 +1,6 @@
 # Serbea syntax highlighting for VS Code
 
-Highlight your [Serbea template](https//www.serbea.dev) code!
+Highlight your [Serbea template](https://www.serbea.dev) code!
 
 ## Features
 

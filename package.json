@@ -4,14 +4,15 @@
     "publisher": "whitefusion",
     "description": "Syntax highlighting for Serbea templates",
     "icon": "icon.png",
-    "version": "0.5.2",
+    "version": "0.5.3",
+    "license": "MIT",
     "repository": {
-		"type": "git",
-		"url": "https://github.com/bridgetownrb/vscode-serbea"
-	},
-	"bugs": {
-		"url": "https://github.com/bridgetownrb/vscode-serbea/issues"
-	},
+        "type": "git",
+        "url": "https://github.com/bridgetownrb/vscode-serbea"
+    },
+    "bugs": {
+        "url": "https://github.com/bridgetownrb/vscode-serbea/issues"
+    },
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -24,28 +25,41 @@
         "onCommand:serbeaExtension.convertExpressionToPipeline"
     ],
     "contributes": {
-        "languages": [{
-            "id": "serbea",
-            "aliases": ["Serbea (Ruby)", "serbea"],
-            "extensions": [".serb"],
-            "configuration": "./language-configuration.json"
-        },
-        {
-            "id": "serbea-markdown",
-            "aliases": ["Serbea Markdown (Ruby)"],
-            "extensions": [".md"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "serbea",
-            "scopeName": "text.html.serb",
-            "path": "./syntaxes/serbea.tmLanguage.json"
-        },
-        {
-            "language": "serbea-markdown",
-            "scopeName": "text.html.markdown.serb",
-            "path": "./syntaxes/serbea-markdown.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "serbea",
+                "aliases": [
+                    "Serbea (Ruby)",
+                    "serbea"
+                ],
+                "extensions": [
+                    ".serb"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "serbea-markdown",
+                "aliases": [
+                    "Serbea Markdown (Ruby)"
+                ],
+                "extensions": [
+                    ".md"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "serbea",
+                "scopeName": "text.html.serb",
+                "path": "./syntaxes/serbea.tmLanguage.json"
+            },
+            {
+                "language": "serbea-markdown",
+                "scopeName": "text.html.markdown.serb",
+                "path": "./syntaxes/serbea-markdown.tmLanguage.json"
+            }
+        ],
         "commands": [
             {
                 "command": "serbeaExtension.convertErbToSerbea",

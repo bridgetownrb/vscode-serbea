@@ -11,7 +11,7 @@ Besides syntax highlighting of `*.serb` files, it comes with two palette command
 
 There's also a **Serbea Markdown (Ruby)** language so you can write Markdown with embedded Serbea code (as is typical in [Bridgetown](https://www.bridgetownrb.com) projects).
 
-Also, if you're using the VSCode Icons package, add this to your `settings.json`:
+If you're using the VSCode Icons package, add this to your `settings.json`:
 
 ```json
   "vsicons.associations.files": [
@@ -21,6 +21,14 @@ Also, if you're using the VSCode Icons package, add this to your `settings.json`
       "format": "svg"
     }
   ]
+```
+
+or for the Symbols icons:
+
+```json
+  "symbols.files.associations": {
+    "*.serb": "ruby"
+  }
 ```
 
 ## Having Issues?
